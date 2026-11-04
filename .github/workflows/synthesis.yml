@@ -1,0 +1,11 @@
+name: Generic RTL synthesis
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  synthesis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install synthesizer
+        run: sudo apt-get update -qq && sudo apt-get install -y yosys
+      - name: Synthesize axis_protocol_guard
+        run: yosys -Q -T -p 'read_verilog -sv rtl/axis_protocol_guard.sv; hierarchy -check -top axis_protocol_guard; synth -top axis_protocol_guard; stat'
