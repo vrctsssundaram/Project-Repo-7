@@ -15,7 +15,6 @@ module axis_protocol_guard #(
     output reg                   sticky_stall_error,
     output reg                   sticky_keep_error
 );
-    timeunit 1ns; timeprecision 1ps;
     localparam integer KEEP_W = DATA_W/8;
     reg previous_stall;
     reg [DATA_W-1:0] held_data;
