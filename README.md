@@ -17,6 +17,6 @@ make synth
 
 Design sources are in `rtl/`, directed tests in `tb/`, and interface, architecture, testing and measured results in `docs/`.
 
-**Scope:** A monitor, not an AXI-Stream interposer or exhaustive formal protocol checker.
+**Architecture:** Passive AXI4-Stream protocol monitor with traffic counters and sticky violation flags.
 
 Project owner: Sundaram S S.

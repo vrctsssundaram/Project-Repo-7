@@ -11,4 +11,4 @@
 | `sticky_keep_error` | Incorrect TKEEP pattern |
 | `clear` | Synchronous counter and sticky-flag clear |
 
-No upstream design modification or active bus intervention.
+Passive, observation-only connection to the monitored AXI4-Stream bus.
