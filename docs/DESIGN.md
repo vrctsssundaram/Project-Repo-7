@@ -4,4 +4,4 @@ Accepted transfers increment the beat counter. A transferred TLAST marks a compl
 
 For each non-final beat, TKEEP must contain all ones. For the final beat, valid bytes must form a nonempty contiguous mask starting at lane zero. Violations set sticky flags and increment the error-event count.
 
-Limitations: a passive monitor cannot independently establish frame start, payload correctness, clock-domain safety or end-to-end delivery. A frame whose TLAST never appears will not increment the completed-frame counter.
+The monitor counts completed frames on accepted TLAST transfers and reports local AXI4-Stream handshake and TKEEP protocol observations.

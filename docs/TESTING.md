@@ -6,4 +6,4 @@ Directed tests cover two-beat frame counts, bad non-final TKEEP, a stalled-paylo
 
 Extend with random stall timing, assertion coverage, legal parameter widths, malformed TLAST sequences and integration to the target bus.
 
-Run `make synth` with Yosys installed to reproduce the generic RTL synthesis check. Hardware placement, timing and power remain separate.
+`make synth` reproduces the generic Yosys RTL synthesis check.
