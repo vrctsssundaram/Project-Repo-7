@@ -1,4 +1,4 @@
-# AxisSentinel
+# AXI4-Stream protocol monitor
 
 Passive AXI-Stream handshake and TKEEP behavior monitor.
 
